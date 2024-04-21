@@ -5,12 +5,27 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Home';
+import Overview from './Overview';
+import Inventory from './Inventory';
+import Sales from './Sales';
+import Customer from './Customer';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Overview/>,
+  },
+  { 
+    path: "/Sales",
+    element: <Sales/>,
+  },
+  {  
+    path: "/Inventory",
+    element: <Inventory/>,
+  },
+  {  
+    path: "/Customer",
+    element: <Customer/>,
   },
 // ส่วนของ path และ element เราสามารถเพิ่มมาอีกได้เรื่อย ๆ กรณีที่เรามีหลายเพจ
 ]);
