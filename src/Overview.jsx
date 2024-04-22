@@ -19,12 +19,10 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 
-import { RxDashboard } from "react-icons/rx";
-import { MdOutlineSell } from "react-icons/md";
-import { MdOutlineInventory2 } from "react-icons/md";
-import { HiOutlineUser } from "react-icons/hi2";
-
+import BarChart from './BarChart';
+import TopProductSale from './TopProductSale';
 import Sidemenu from './Sidemenu';
+
 
 const drawerWidth = 240;
 
@@ -106,6 +104,7 @@ export default function Overview() {
   };
 
   return (
+    <>
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
    
@@ -120,9 +119,55 @@ export default function Overview() {
         
         
       </Drawer>
-      <div className="content text-3xl">
-          Overview
-      </div>
+        <section className="h-screen w-screen bg-blue-100/25">
+          <div className="content text-3xl">
+                <div className="p-3 grid gap-2 grid-cols-4">
+                  <div className="p-5 bg-white rounded-md shadow-md text-center bg-white">
+                    <div className="detail">
+                      <p className="font-bold">Total Sales</p>
+                      <p className="mt-2 text-blue-500">$1,450</p>
+                    </div>
+                  </div>
+                  <div className="p-5 bg-white rounded-md shadow-md text-center bg-white">
+                    <div className="detail">
+                      <p className="font-bold">Total Product Sales</p>
+                      <p className="mt-2 text-blue-500">20</p>
+                    </div>
+                  </div>
+                  <div className="p-5 bg-white rounded-md shadow-md text-center bg-white">
+                    <div className="detail">
+                      <p className="font-bold">New Customer</p>
+                      <p className="mt-2 text-blue-500">+ 10</p>
+                    </div>
+                  </div>
+                  <div className="p-5 bg-white rounded-md shadow-md text-center bg-white">
+                    <div className="detail">
+                      <p className="font-bold">Growth Rates/Month</p>
+                      <p className="mt-2 text-blue-500">15%</p>
+                    </div>
+                  </div>
+
+                  
+                </div>
+                <div className="p-3 grid gap-2 grid-cols-2">
+                  
+                  <div className="p-5 bg-white rounded-md shadow-md text-center bg-white">
+                  <BarChart />
+                  </div>
+                  <div className="p-5 bg-white rounded-md shadow-md text-center bg-white">
+                  
+                    <TopProductSale />
+                  </div>
+                  
+
+                  
+                </div>
+
+                  
+              
+          </div>
+        </section>
     </Box>
+    </>
   );
 }
