@@ -19,8 +19,8 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 
-import BarChart from './BarChart';
-import TopProductSale from './TopProductSale';
+import BarChart from './Chart/BarChart';
+import TopProductSale from './Data/TopProductSale';
 import Sidemenu from './Sidemenu';
 
 
