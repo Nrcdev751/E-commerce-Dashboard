@@ -118,7 +118,7 @@ export default function Inventory() {
       </Drawer>
       <section className="h-screen w-screen bg-blue-100/25">
         <div className="content text-3xl ">
-              <div className="p-2 grid gap-2 grid-cols-4">
+              <div className="p-2 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 <div className="p-5 bg-white rounded-md shadow-md text-center bg-white">
                   <div className="detail">
                     <p className="font-bold">Total Product</p>
