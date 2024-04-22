@@ -27,6 +27,10 @@ const router = createBrowserRouter([
     path: "/Customer",
     element: <Customer/>,
   },
+  {  
+    path: "/E-commerce-Dashboard",
+    element: <Overview/>,
+  },
 // ส่วนของ path และ element เราสามารถเพิ่มมาอีกได้เรื่อย ๆ กรณีที่เรามีหลายเพจ
 ]);
 
