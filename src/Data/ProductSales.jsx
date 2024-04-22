@@ -34,7 +34,7 @@ const rows = [
   { id: 15, rank: 15, productName: 'Desk Lamp', category: 'Home Decor', salesAmount: 7500, date: '2024-04-29', quantity: 15, price: 500 },
 ];
 
-export default function TopProductSale() {
+export default function ProductSale() {
   return (
     <div style={{ height: '100%', width: '100%' }}>
       <DataGrid

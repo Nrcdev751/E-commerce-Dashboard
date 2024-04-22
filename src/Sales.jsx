@@ -115,9 +115,9 @@ export default function Sales() {
         <Sidemenu />
         
       </Drawer>
-      <div className="content text-3xl">
-      <section className="h-screen w-100 bg-blue-100/25">
-          <div className="content ">
+      <section className="h-screen w-screen bg-blue-100/25">
+   
+          <div className="content text-3xl ">
                 <div className="p-2 grid gap-2 grid-cols-2">
                   <div className="p-5 bg-white rounded-md shadow-md text-center bg-white">
                     <div className="detail">
@@ -149,7 +149,6 @@ export default function Sales() {
               
           </div>
         </section>
-      </div>
     </Box>
   );
 }
